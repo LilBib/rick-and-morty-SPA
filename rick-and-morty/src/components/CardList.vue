@@ -1,3 +1,4 @@
+<!-- eslint-disable no-console -->
 <template>
     <h1 class="text-5xl text-white text-center my-5">Список персонажей из Рика и Морти</h1>
     <div v-if="!isDataFetched" class="flex justify-center">
@@ -21,7 +22,7 @@
         <div class="bg-slate-200 border-2 text-center border-green-500 h-8 w-6 rounded-sm mx-3">
             {{currentPage}}
         </div>
-        <p v-if="currentPage<maxPages" @click="onNextPageClick" 
+        <p v-if="currentPage<maxPages" @click="onNextPageClick"
         class="text-xl text-white cursor-pointer hover:opacity-70">
             Следующая страница
         </p>

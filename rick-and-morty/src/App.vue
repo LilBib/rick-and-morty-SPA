@@ -6,11 +6,9 @@
 </template>
 
 <script setup>
-import Header from './components/Header.vue';
+import Header from './components/HeaderComponent.vue';
 
 if (!localStorage.getItem('savedCards')) {
-  localStorage.setItem('savedCards', JSON.stringify([]))
+  localStorage.setItem('savedCards', JSON.stringify([]));
 }
 </script>
-
-

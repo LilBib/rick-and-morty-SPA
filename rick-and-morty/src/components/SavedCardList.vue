@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue';
 import Card from './CardComponent.vue';
 
 export default {
@@ -20,9 +20,9 @@ export default {
     const currentCards = ref([]);
     onMounted(() => {
       currentCards.value = JSON.parse(localStorage.getItem('savedCards'));
-    })
-    return { currentCards }
+    });
+    return { currentCards };
   },
-  components: { Card }
-}
+  components: { Card },
+};
 </script>
