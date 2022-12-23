@@ -4,7 +4,7 @@
         <Card v-for="card in currentCards" :key="card.id"
         :name="card.name"
         :gender="card.gender"
-        :origin="card.origin.name"
+        :origin="card.origin"
         :img="card.img"
         :savedCards="savedCards" />
     </div>
